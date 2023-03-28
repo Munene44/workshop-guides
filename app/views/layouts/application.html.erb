@@ -22,6 +22,8 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link <%= 'active' if current_page?(controller: 'ideas') %>" href="/ideas">Ideas</a>
+
+          
         </li>
       </ul>
     </div>
@@ -30,5 +32,10 @@
   <div class="container">
   <%= yield %>
   </div>
+  <footer class="mt-5 text-center">
+  <div class="container">
+    Saibot<%= Time.now.year %>
+  </div>
+</footer>
   </body>
 </html>
